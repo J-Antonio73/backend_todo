@@ -58,10 +58,9 @@ class TaskController extends Controller
     public function updateStatus(Request $request, string $id)
     {
         $task = Task::findOrFail($id);
-        $task->completed = $request->completed;
-        $task->save();
+        $task->update($request->only(['completed']));
 
-        return $task;
+        return response()->json($task);
     }
 
     /**
