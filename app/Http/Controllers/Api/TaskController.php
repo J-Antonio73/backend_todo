@@ -49,7 +49,6 @@ class TaskController extends Controller
         $task->title = $request->title;
         $task->description = $request->description;
         $task->limit_date = $request->limit_date;
-        $task->completed = $request->completed;
         $task->save();
 
         return $task;
