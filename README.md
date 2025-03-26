@@ -133,7 +133,7 @@ Endpoints disponibles
 
 # Enlace de desarrollo
 
-Aplicación backend
+Aplicación frontend
 
 -   [Frontend](https://github.com/J-Antonio73/frontend_todo)
 
