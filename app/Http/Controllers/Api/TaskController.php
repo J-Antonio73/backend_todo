@@ -41,6 +41,16 @@ class TaskController extends Controller
     }
 
     /**
+     * Display the completed tasks.
+     */
+    public function showCompleted()
+    {
+        $tasks = Task::where('completed', 1)->get();
+
+        return response()->json($tasks);
+    }
+
+    /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, string $id)
@@ -54,6 +64,9 @@ class TaskController extends Controller
         return $task;
     }
 
+    /**
+     * Update the status of the specified resource in storage.
+     */
     public function updateStatus(Request $request, string $id)
     {
         $task = Task::findOrFail($id);
