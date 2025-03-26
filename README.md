@@ -63,17 +63,22 @@ php artisan serve
 
 Endpoints disponibles
 
-● POST /api/task
-● GET /api/tasks
-● GET /api/tasks/completed
-● GET /api/task/{id}
-● PUT /api/task/{id}
-● PATCH /api/task/{id}
-● DELETE /api/task/{id}
+| Metodo | endpoint             |
+| ------ | -------------------- |
+| POST   | /api/task            |
+| GET    | /api/tasks           |
+| GET    | /api/tasks/completed |
+| GET    | /api/task/{id}       |
+| PUT    | /api/task/{id}       |
+| PATCH  | /api/task/{id}       |
+| DELETE | /api/task/{id}       |
 
 ## Explicación de cada endpoint
 
-● POST /api/task - Descripción: Añade una nueva tarea a la base de datos - Parametros:
+● POST /api/task
+
+-   Descripción: Añade una nueva tarea a la base de datos
+-   Parametros:
 
 ```json
 {
@@ -83,13 +88,23 @@ Endpoints disponibles
 }
 ```
 
-● GET /api/tasks - Descripción: Lista todas las tareas en la base de datos
+● GET /api/tasks
 
-● GET /api/tasks/completed - Descripción: Lista todas las tareas completadas en la base de datos
+-   Descripción: Lista todas las tareas en la base de datos
 
-● GET /api/task/{id} - Descripción: Muestra una tarea en especifico - Parametros: {id} = id de la tarea
+● GET /api/tasks/completed
 
-● PUT /api/task/{id} - Descripción: Actualiza una tarea a la base de datos - Parametros: {id} = Id de la tarea a modificar
+-   Descripción: Lista todas las tareas completadas en la base de datos
+
+● GET /api/task/{id}
+
+-   Descripción: Muestra una tarea en especifico
+-   Parametros: {id} = id de la tarea
+
+● PUT /api/task/{id}
+
+-   Descripción: Actualiza una tarea a la base de datos
+-   Parametros: {id} = Id de la tarea a modificar
 
 ```json
 {
@@ -99,7 +114,10 @@ Endpoints disponibles
 }
 ```
 
-● PATCH /api/task/{id} - Descripción: Actualiza el estado de la tarea a Completada - Parametros: {id} = Id de la tarea a modificar
+● PATCH /api/task/{id}
+
+-   Descripción: Actualiza el estado de la tarea a Completada
+-   Parametros: {id} = Id de la tarea a modificar
 
 ```json
 {
@@ -107,10 +125,7 @@ Endpoints disponibles
 }
 ```
 
-● DELETE /api/task/{id} - Descripción: Elimina una tarea de la base de datos - Parametros: {id} = Id de la tarea a eliminar
+● DELETE /api/task/{id}
 
-# Enlace de produccion
-
-Aplicación en Vercel
-
--   [Proximamente]()
+-   Descripción: Elimina una tarea de la base de datos
+-   Parametros: {id} = Id de la tarea a eliminar
