@@ -31,6 +31,7 @@ git clone https://github.com/J-Antonio73/backend_todo.git
 ```sh
 composer install
 ```
+Nota: quitar la extensión ".example" del archivo ".env.example" o crear una copia del archivo sin la extensión ".example"
 
 3.- Realizar las migraciones
 
