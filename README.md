@@ -75,13 +75,13 @@ Endpoints disponibles
 
 ● POST /api/task - Descripción: Añade una nueva tarea a la base de datos - Parametros:
 
-````json
+```json
 {
     "title": "",
     "description": "",
     "limit_date": ""
-}```
-````
+}
+```
 
 ● GET /api/tasks - Descripción: Lista todas las tareas en la base de datos
 
@@ -91,21 +91,21 @@ Endpoints disponibles
 
 ● PUT /api/task/{id} - Descripción: Actualiza una tarea a la base de datos - Parametros: {id} = Id de la tarea a modificar
 
-````json
+```json
 {
     "title": "",
     "description": "",
     "limit_date": ""
-}```
-````
+}
+```
 
 ● PATCH /api/task/{id} - Descripción: Actualiza el estado de la tarea a Completada - Parametros: {id} = Id de la tarea a modificar
 
-````json
+```json
 {
     "completed": ""
-}```
-````
+}
+```
 
 ● DELETE /api/task/{id} - Descripción: Elimina una tarea de la base de datos - Parametros: {id} = Id de la tarea a eliminar
 
